@@ -1,13 +1,12 @@
 # Site
-name: 'Mundana'
-description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
+name: 'Pritesh Kamde'
+description: 'Your personal blog description here - write what your site is about'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: '/mundana-theme-jekyll'
-disqus: 'demowebsite'
-email: 'wowthemesnet@gmail.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-
+baseurl: ''  # IMPORTANT: Empty for GitHub Pages
+disqus: ''   # Add your Disqus shortname if you want comments, or leave empty
+email: 'priteshkamde24@gmail.com'
+mailchimp-list: ''  # Add your Mailchimp URL if you have one, or leave empty
 include: ["_pages"]
 permalink: /:title/
 
@@ -19,31 +18,23 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
-
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+    pritesh:  # Your author key
+      name:           Pritesh Kamde
+      site:           https://Priteshkamde.github.io
+      avatar:         /assets/images/avatar1.jpg  # Change this to your photo
+      bio:            "Write your bio here - tell people about yourself!"
+      email:          your-email@gmail.com
+      twitter:        https://twitter.com/yourusername  # Your Twitter if you have one
+    # You can remove the 'jane' author or keep it for multiple authors
  
 # Defaults
 defaults:
-
   # all posts
   - scope:
       path: "_posts"
     values:
       layout: post
-      author: sal
+      author: pritesh  # Changed to match your author key above
       avatar: /assets/images/avatar1.jpg
       
   # all pages
@@ -59,7 +50,5 @@ highlighter: rouge
 # Paginate
 paginate: 10
 
-
-
-# Exclude metadata and development time dependencies (like Grunt plugins)
+# Exclude metadata and development time dependencies
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
