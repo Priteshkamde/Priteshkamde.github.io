@@ -1,32 +1,32 @@
 # Site
-name: 'Pritesh Kamde'
-description: 'Your personal blog description here - write what your site is about'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
-baseurl: ''  # IMPORTANT: Empty for GitHub Pages
-disqus: ''   # Add your Disqus shortname if you want comments, or leave empty
-email: 'priteshkamde24@gmail.com'
-mailchimp-list: ''  # Add your Mailchimp URL if you have one, or leave empty
+name: "Pritesh Kamde"
+description: "Your personal blog description here - write what your site is about"
+logo: "assets/images/logo.png"
+favicon: "assets/images/favicon.ico"
+baseurl: "" # IMPORTANT: Empty for GitHub Pages
+disqus: "" # Add your Disqus shortname if you want comments, or leave empty
+email: "priteshkamde24@gmail.com"
+mailchimp-list: "" # Add your Mailchimp URL if you have one, or leave empty
 include: ["_pages"]
 permalink: /:title/
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  
+
 authors:
-    pritesh:  # Your author key
-      name:           Pritesh Kamde
-      site:           https://Priteshkamde.github.io
-      avatar:         /assets/images/avatar1.jpg  # Change this to your photo
-      bio:            "Write your bio here - tell people about yourself!"
-      email:          your-email@gmail.com
-      twitter:        https://twitter.com/yourusername  # Your Twitter if you have one
-    # You can remove the 'jane' author or keep it for multiple authors
- 
+  pritesh: # Your author key
+    name: Pritesh Kamde
+    site: https://Priteshkamde.github.io
+    avatar: /assets/images/avatar1.jpeg # Change this to your photo
+    bio: "Write your bio here - tell people about yourself!"
+    email: your-email@gmail.com
+    twitter: https://twitter.com/yourusername # Your Twitter if you have one
+  # You can remove the 'jane' author or keep it for multiple authors
+
 # Defaults
 defaults:
   # all posts
@@ -34,15 +34,15 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: pritesh  # Changed to match your author key above
-      avatar: /assets/images/avatar1.jpg
-      
+      author: pritesh # Changed to match your author key above
+      avatar: /assets/images/avatar1.jpeg
+
   # all pages
   - scope:
       path: "_pages"
     values:
       layout: page
-      
+
 # Syntax
 markdown: kramdown
 highlighter: rouge
@@ -51,4 +51,12 @@ highlighter: rouge
 paginate: 10
 
 # Exclude metadata and development time dependencies
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude:
+  [
+    README.markdown,
+    package.json,
+    grunt.js,
+    Gruntfile.js,
+    Gruntfile.coffee,
+    node_modules,
+  ]
