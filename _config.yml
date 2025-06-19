@@ -21,7 +21,7 @@ authors:
   pritesh: # Your author key
     name: Pritesh Kamde
     site: https://Priteshkamde.github.io
-    avatar: /assets/images/avatar1.jpg # Change this to your photo
+    avatar: assets/images/avatar1.jpg # Change this to your photo
     bio: "Write your bio here - tell people about yourself!"
     email: priteshkamde24@gmail.com
     twitter: https://twitter.com/yourusername
@@ -34,7 +34,7 @@ defaults:
     values:
       layout: post
       author: pritesh # Changed to match your author key above
-      avatar: /assets/images/avatar1.jpg
+      avatar: assets/images/avatar1.jpg
 
   # all pages
   - scope:
