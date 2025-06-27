@@ -4,7 +4,7 @@ title: "Medical Imaging"
 author: pritesh
 categories: [Python, Medical Imaging]
 image: assets/images/medical-imaging.jpg
-tags: [sticky]
+tags: [featured]
 ---
 
 # 🦴 X-ray Body Part Classifier – Quick Demo using AI
