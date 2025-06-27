@@ -1,20 +1,107 @@
 ---
 layout: post
 title: "Medical Imaging"
-author: jane
-categories: [Jekyll, tutorial]
-image: assets/images/home.jpg
+author: pritesh
+categories: [Python, Medical Imaging]
+image: assets/images/medical-imaging.jpg
 tags: [sticky]
 ---
 
-Bucharest’s history alternated periods of development and decline from the early settlements in antiquity until its consolidation as the national capital of Romania late in the 19th century. First mentioned as the “Citadel of București” in 1459, it became the residence of the famous Wallachian prince Vlad III the Impaler.
+# 🦴 X-ray Body Part Classifier – Quick Demo using AI
 
-#### Early 18th century woodcut of Bucharest
+## 🧩 Problem Statement
 
-The Ottomans appointed Greek administrators (Phanariotes) to run the town from the 18th century. A short-lived revolt initiated by Tudor Vladimirescu in 1821 led to the end of the rule of Constantinople Greeks in Bucharest.[19]
+In hospitals, thousands of X-ray images are generated daily, but many are:
 
-The Old Princely Court (Curtea Veche) was erected by Mircea Ciobanul in the mid-16th century. Under subsequent rulers, Bucharest was established as the summer residence of the royal court. During the years to come, it competed with Târgoviște on the status of capital city after an increase in the importance of southern Muntenia brought about by the demands of the suzerain power – the Ottoman Empire.
+- Unlabeled or misfiled
+- Mixed in storage without body-part tags
 
-Bucharest finally became the permanent location of the Wallachian court after 1698 (starting with the reign of Constantin Brâncoveanu).
+This makes it hard for doctors and AI systems to automatically route or diagnose these images efficiently.
 
-Partly destroyed by natural disasters and rebuilt several times during the following 200 years, and hit by Caragea’s plague in 1813–14, the city was wrested from Ottoman control and occupied at several intervals by the Habsburg Monarchy (1716, 1737, 1789) and Imperial Russia (three times between 1768 and 1806). It was placed under Russian administration between 1828 and the Crimean War, with an interlude during the Bucharest-centred 1848 Wallachian revolution. Later, an Austrian garrison took possession after the Russian departure (remaining in the city until March 1857). On 23 March 1847, a fire consumed about 2,000 buildings, destroying a third of the city.
+---
+
+## ❓ Why Are We Solving This?
+
+Automatically identifying **which body part** an X-ray image belongs to can:
+
+- Help organize and sort large medical datasets
+- Serve as a **preprocessing step** for disease detection models
+- Reduce human effort in data labeling
+- Allow smart routing of images to relevant specialists
+
+---
+
+## 🧠 Approach
+
+We are building a **lightweight AI model** that:
+
+1. Takes any X-ray image as input
+2. Predicts the body part shown (e.g., chest, hand, knee)
+3. Displays the prediction in a simple UI
+
+---
+
+## 🗃️ Dataset
+
+For the demo testing, we use a **small custom sample dataset** containing:
+
+- Chest X-rays
+- Hand X-rays
+- (You can add more like knee, pelvis, skull)
+
+We structure the dataset as:
+data/
+train/
+chest/
+chest1.png
+hand/
+hand1.png
+
+## Public datasets like:
+
+- [MURA Dataset (Stanford)](https://stanfordmlgroup.github.io/competitions/mura/)
+- [VinDr X-ray Dataset (Kaggle)](https://www.kaggle.com/datasets/vinbigdata/vindr-cxr)
+
+---
+
+## ⚙️ Tech Stack
+
+| Component               | Tool                              |
+| ----------------------- | --------------------------------- |
+| Deep Learning Framework | **PyTorch**                       |
+| Model                   | **Pretrained ResNet18**           |
+| Frontend UI             | **Streamlit**                     |
+| Image Processing        | **Pillow, TorchVision**           |
+| Deployment              | Local browser via `streamlit run` |
+
+---
+
+## 🚀 How It Works
+
+1. Train a simple ResNet18 on your labeled X-ray images
+2. Save the model and class labels
+3. Use Streamlit to build a web interface:
+   - Upload an image
+   - View predicted body part + confidence score
+
+---
+
+## ✅ Output
+
+- A trained model file: `xray_bodypart_model.pth`
+- A live web app that classifies uploaded X-ray images by body part
+
+---
+
+## 📦 How to Run (Quick Start)
+
+```bash
+# Install dependencies
+pip install torch torchvision streamlit pillow
+
+# Train the model
+python train.py
+
+# Run the UI
+streamlit run app.py
+```
