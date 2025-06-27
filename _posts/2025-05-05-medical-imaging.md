@@ -4,12 +4,12 @@ title: "Medical Imaging"
 author: pritesh
 categories: [Python, Medical Imaging]
 image: assets/images/medical-imaging.jpg
-tags: [featured]
+tags: [sticky, featured]
 ---
 
-# 🦴 X-ray Body Part Classifier – Quick Demo using AI
+# X-ray Body Part Classifier – Quick Demo using AI
 
-## 🧩 Problem Statement
+### 🧩 Problem Statement
 
 In hospitals, thousands of X-ray images are generated daily, but many are:
 
@@ -20,7 +20,7 @@ This makes it hard for doctors and AI systems to automatically route or diagnose
 
 ---
 
-## ❓ Why Are We Solving This?
+### ❓ Why Are We Solving This?
 
 Automatically identifying **which body part** an X-ray image belongs to can:
 
@@ -31,7 +31,7 @@ Automatically identifying **which body part** an X-ray image belongs to can:
 
 ---
 
-## 🧠 Approach
+### 🧠 Approach
 
 We are building a **lightweight AI model** that:
 
@@ -41,7 +41,7 @@ We are building a **lightweight AI model** that:
 
 ---
 
-## 🗃️ Dataset
+### 🗃️ Dataset
 
 For the demo testing, we use a **small custom sample dataset** containing:
 
@@ -57,14 +57,14 @@ chest1.png
 hand/
 hand1.png
 
-## Public datasets like:
+### Public datasets like:
 
 - [MURA Dataset (Stanford)](https://stanfordmlgroup.github.io/competitions/mura/)
 - [VinDr X-ray Dataset (Kaggle)](https://www.kaggle.com/datasets/vinbigdata/vindr-cxr)
 
 ---
 
-## ⚙️ Tech Stack
+### ⚙️ Tech Stack
 
 | Component               | Tool                              |
 | ----------------------- | --------------------------------- |
@@ -76,7 +76,7 @@ hand1.png
 
 ---
 
-## 🚀 How It Works
+### 🚀 How It Works
 
 1. Train a simple ResNet18 on your labeled X-ray images
 2. Save the model and class labels
@@ -86,14 +86,14 @@ hand1.png
 
 ---
 
-## ✅ Output
+### ✅ Output
 
 - A trained model file: `xray_bodypart_model.pth`
 - A live web app that classifies uploaded X-ray images by body part
 
 ---
 
-## 📦 How to Run (Quick Start)
+### 📦 How to Run (Quick Start)
 
 ```bash
 # Install dependencies
