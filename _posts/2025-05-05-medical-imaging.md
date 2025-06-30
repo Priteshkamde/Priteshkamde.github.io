@@ -93,4 +93,4 @@ Public datasets:
 
 ---
 
-![X-ray Classifier Demo](assets/images/medical-imaging-demo.png)
+![X-ray Classifier Demo](/assets/images/medical-imaging-demo.png)
