@@ -3,7 +3,7 @@ layout: post
 title: "Medical Imaging"
 author: pritesh
 categories: [Python, Medical Imaging]
-image: assets/images/medical-imaging.jpg
+image: assets/images/medical-imaging-header.jpg
 tags: [sticky, featured]
 ---
 
@@ -11,7 +11,7 @@ tags: [sticky, featured]
 
 ### 🧩 Problem Statement
 
-In hospitals, thousands of X-ray images are generated daily, but many are:
+In hospitals, thousands of X-ray images are generated daily but many are:
 
 - Unlabeled or misfiled
 - Mixed in storage without body-part tags
@@ -31,40 +31,40 @@ Automatically identifying **which body part** an X-ray image belongs to can:
 
 ---
 
-### 🧠 Approach
+### Approach
 
 We are building a **lightweight AI model** that:
 
 1. Takes any X-ray image as input
-2. Predicts the body part shown (e.g., chest, hand, knee)
+2. Predicts the body part shown (e.g., wrist, shoulder, humerus)
 3. Displays the prediction in a simple UI
 
 ---
 
-### 🗃️ Dataset
+### Dataset
 
-For the demo testing, we use a **small custom sample dataset** containing:
+For this demo, we used a **subset of the MURA dataset** (Stanford):
 
-- Chest X-rays
-- Hand X-rays
-- (You can add more like knee, pelvis, skull)
+- 7 body part classes: elbow, finger, forearm, hand, humerus, shoulder, wrist
+- 200 images per class to keep training fast
 
-We structure the dataset as:
+Structure:
+
 data/
-train/
-chest/
-chest1.png
-hand/
-hand1.png
+└── train/
+├── elbow/
+├── hand/
+├── shoulder/
+└── ...
 
-### Public datasets like:
+Public datasets:
 
 - [MURA Dataset (Stanford)](https://stanfordmlgroup.github.io/competitions/mura/)
 - [VinDr X-ray Dataset (Kaggle)](https://www.kaggle.com/datasets/vinbigdata/vindr-cxr)
 
 ---
 
-### ⚙️ Tech Stack
+### Tech Stack
 
 | Component               | Tool                              |
 | ----------------------- | --------------------------------- |
@@ -76,32 +76,21 @@ hand1.png
 
 ---
 
-### 🚀 How It Works
+### Working
 
-1. Train a simple ResNet18 on your labeled X-ray images
-2. Save the model and class labels
-3. Use Streamlit to build a web interface:
-   - Upload an image
-   - View predicted body part + confidence score
-
----
-
-### ✅ Output
-
-- A trained model file: `xray_bodypart_model.pth`
-- A live web app that classifies uploaded X-ray images by body part
+1. Training a ResNet18 on your labeled X-ray images
+2. Saving the model and class labels
+3. Using Streamlit to create a web app:
+   - Upload an X-ray image
+   - View predicted body part and confidence scores
 
 ---
 
-### 📦 How to Run (Quick Start)
+### Output
 
-```bash
-# Install dependencies
-pip install torch torchvision streamlit pillow
+- `xray_bodypart_model.pth` – the trained model
+- Live web app to classify uploaded X-rays by body part
 
-# Train the model
-python train.py
+---
 
-# Run the UI
-streamlit run app.py
-```
+![X-ray Classifier Demo](assets/images/medical-imaging-demo.png)
