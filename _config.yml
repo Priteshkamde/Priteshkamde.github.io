@@ -19,10 +19,10 @@ plugins:
 
 authors:
   pritesh: # Your author key
-    name: Pritesh Kamde
+    name: Pritesh K
     site: https://Priteshkamde.github.io
     avatar: assets/images/avatar1.jpg # Change this to your photo
-    bio: "I’m Pritesh Kamde, a Full Stack Software Engineer with a Master’s in Information Systems from the University of Arizona (Eller College) and 3 years of experience building scalable fintech systems at Barclays. My background spans Java, Spring Boot, React, Python, Node.js, and cloud platforms like AWS and GCP. At Barclays, I designed enterprise-grade APIs and real-time dashboards for retail banking and credit systems. I’ve also worked across the MERN stack to consolidate internal tools for workforce planning. With a foundation in both backend engineering and front-end architecture, I enjoy building secure, high-performance systems that solve real business problems. Outside of work, I’ve served as a Graduate Assistant and certified tutor, mentoring students in business and tech courses. I’m passionate about creating software that drives impact—whether through data-driven platforms, seamless user experiences, or automating workflows. Currently open to full-time opportunities where I can contribute to high-growth teams driving innovation in finance, AI, or cloud-native platforms."
+    bio: "AI Consultant"
     email: priteshkamde24@gmail.com
     twitter: https://twitter.com/yourusername
 
