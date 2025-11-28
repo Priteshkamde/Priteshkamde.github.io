@@ -4,7 +4,7 @@ title: "Work With Me"
 author: pritesh
 categories: [Collaboration]
 tags: [featured]
-image: assets/images/avatar1.jpg
+image: assets/images/batman-bg.jpg
 ---
 
 ## 🤝 Collaborate and Work With Me
