@@ -9,6 +9,7 @@ email: "priteshkamde24@gmail.com"
 mailchimp-list: "" # Add your Mailchimp URL if you have one, or leave empty
 include: ["_pages"]
 permalink: /:title/
+future: true
 
 # Plugins
 plugins:
