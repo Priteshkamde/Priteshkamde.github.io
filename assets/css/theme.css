@@ -814,7 +814,7 @@ div.a2a_full_footer {display:none;}
 }
 
 body {
-	font-family: "Manrope", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+	font-family: "Inter", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
 	color: var(--neutral-900);
 	background-color: #ffffff;
 	letter-spacing: 0.01em;
@@ -840,7 +840,7 @@ a:hover {
 }
 
 .navbar-brand {
-	font-family: "Manrope", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+	font-family: "Inter", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
 	font-weight: 600;
 	letter-spacing: 0.02em;
 }
@@ -1063,6 +1063,7 @@ a:hover {
 	background: #ffffff;
 	border: 1px solid var(--neutral-200);
 	border-radius: 24px;
+	padding: 1.5rem 2rem;
 }
 
 .post-meta small {
