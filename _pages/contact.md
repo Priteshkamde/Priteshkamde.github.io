@@ -4,7 +4,7 @@ permalink: "/contact.html"
 ---
 
 <form action="https://formspree.io/{{site.email}}" method="POST">    
-<p class="mb-4">Please send your message to {{site.name}}. I will reply as soon as possible!</p>
+<p class="mb-4">Send a note about opportunities, collaborations, or questions — I read every message.</p>
 <div class="form-group row">
 <div class="col-md-6">
 <input class="form-control" type="text" name="name" placeholder="Name*" required>
@@ -14,5 +14,5 @@ permalink: "/contact.html"
 </div>
 </div>
 <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
-<input class="btn btn-success" type="submit" value="Send">
+<input class="btn btn-dark" type="submit" value="Send">
 </form>

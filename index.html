@@ -10,8 +10,34 @@ description: "Pritesh's Portfolio"
 <div class="container">
     
 {% if page.url == "/" %}
-    
-    
+
+<section class="hero-sleek">
+    <div class="hero-sleek__content">
+        <p class="hero-sleek__eyebrow">Portfolio and writing</p>
+        <h1 class="hero-sleek__title">Hi, I'm {{ site.name }}.</h1>
+        <p class="hero-sleek__lead">{{ site.description }}</p>
+        <div class="hero-sleek__actions">
+            <a class="btn btn-dark btn-round" href="https://drive.google.com/file/d/1wl24w4v9OJqnNWwE_7V3Hz-nnfGTVdi4/view?usp=sharing">Resume</a>
+            <a class="btn btn-outline-dark btn-round" href="{{site.baseurl}}/about.html">About</a>
+            <a class="btn btn-link" href="{{site.baseurl}}/contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="hero-sleek__panel">
+        <div class="hero-sleek__panel-item">
+            <span>Role</span>
+            <strong>{{ site.authors.pritesh.bio }}</strong>
+        </div>
+        <div class="hero-sleek__panel-item">
+            <span>Email</span>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <div class="hero-sleek__panel-item">
+            <span>LinkedIn</span>
+            <a href="{{ site.authors.pritesh.linkedin }}">Connect</a>
+        </div>
+    </div>
+</section>
+
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
 <div class="row remove-site-content-margin">
@@ -168,7 +194,7 @@ description: "Pritesh's Portfolio"
    
     <div class="col-md-8 main-loop">
         
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>Latest Writing</span></h4>
         
 
         {% for post in paginator.posts %}

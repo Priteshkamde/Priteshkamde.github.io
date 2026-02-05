@@ -1,6 +1,6 @@
 # Site
 name: "Pritesh K"
-description: "Your personal blog description here - write what your site is about"
+description: "Software engineer building backend, frontend, and agentic AI applications."
 logo: "assets/images/logo.png"
 favicon: "assets/images/favicon.ico"
 baseurl: "" # IMPORTANT: Empty for GitHub Pages
@@ -23,7 +23,7 @@ authors:
     name: Pritesh K
     site: https://Priteshkamde.github.io
     avatar: assets/images/avatar1.jpg # Change this to your photo
-    bio: "AI Consultant"
+    bio: "Software Engineer • Backend, Frontend, Agentic AI"
     email: priteshkamde24@gmail.com
     linkedin: https://www.linkedin.com/in/pritesh-kamde/
 
