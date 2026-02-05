@@ -4,7 +4,7 @@ title: "Cancer Subtype Classifier using Gene Expression"
 author: pritesh
 categories: [Python, Bioinformatics]
 image: assets/images/cancer-demo-header.png
-tags: [sticky]
+tags: [sticky, featured]
 ---
 
 # Cancer Subtype Classifier – Demo using Gene Expression and ML

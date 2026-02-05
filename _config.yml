@@ -1,6 +1,6 @@
 # Site
 name: "Pritesh K"
-description: "Your personal blog description here - write what your site is about"
+description: "Software engineer building backend, frontend, and agentic AI applications."
 logo: "assets/images/logo.png"
 favicon: "assets/images/favicon.ico"
 baseurl: "" # IMPORTANT: Empty for GitHub Pages
