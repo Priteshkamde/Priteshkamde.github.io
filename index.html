@@ -11,36 +11,37 @@ description: "Pritesh's Portfolio"
     
 {% if page.url == "/" %}
 
-<section class="home-hero">
-    <div class="home-hero__content">
-        <p class="home-hero__eyebrow">Portfolio and writing</p>
-        <h1 class="home-hero__title">Hi, I'm {{ site.name }}.</h1>
-        <p class="home-hero__lead">{{ site.description }}</p>
-        <div class="home-hero__actions">
+<section class="hero-creative">
+    <div class="hero-creative__texture"></div>
+    <div class="hero-creative__content">
+        <p class="hero-creative__eyebrow">Portfolio and writing</p>
+        <h1 class="hero-creative__title">Hi, I'm {{ site.name }}.</h1>
+        <p class="hero-creative__lead">{{ site.description }}</p>
+        <div class="hero-creative__actions">
             <a class="btn btn-dark btn-round" href="https://drive.google.com/file/d/1wl24w4v9OJqnNWwE_7V3Hz-nnfGTVdi4/view?usp=sharing">Resume</a>
             <a class="btn btn-outline-dark btn-round" href="{{site.baseurl}}/about.html">About</a>
             <a class="btn btn-link" href="{{site.baseurl}}/contact.html">Contact</a>
         </div>
     </div>
-    <div class="home-hero__meta">
-        <div class="home-meta-card">
-            <div class="home-meta-label">Role</div>
-            <div class="home-meta-value">{{ site.authors.pritesh.bio }}</div>
+    <div class="hero-creative__stack">
+        <div class="hero-card hero-card--primary">
+            <div class="hero-card__label">Role</div>
+            <div class="hero-card__value">{{ site.authors.pritesh.bio }}</div>
         </div>
-        <div class="home-meta-card">
-            <div class="home-meta-label">Email</div>
-            <a class="home-meta-value" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <div class="hero-card hero-card--offset">
+            <div class="hero-card__label">Email</div>
+            <a class="hero-card__value" href="mailto:{{ site.email }}">{{ site.email }}</a>
         </div>
-        <div class="home-meta-card">
-            <div class="home-meta-label">LinkedIn</div>
-            <a class="home-meta-value" href="{{ site.authors.pritesh.linkedin }}">Connect</a>
+        <div class="hero-card hero-card--thin">
+            <div class="hero-card__label">LinkedIn</div>
+            <a class="hero-card__value" href="{{ site.authors.pritesh.linkedin }}">Connect</a>
         </div>
     </div>
 </section>
 
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
-<div class="row remove-site-content-margin">
+<div class="row remove-site-content-margin home-featured">
     
     <!-- latest post -->
     {% assign latest_post = site.posts[0] %}
