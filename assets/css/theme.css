@@ -297,7 +297,7 @@ a.text-dark:hover {
 		right:0;
 	}
     .jumbotron-home h1 {
-        font-family: Georgia,Times,"Times New Roman",serif;
+        font-family: "Inter", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 1.1;
@@ -654,12 +654,12 @@ footer {
 article {
 	font-size:20px;
 	line-height:1.86;
-    font-family:Lora;
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
 }
 .article-headline {
-    font-family: Georgia,Times,"Times New Roman",serif;
-    font-size: 3.2rem;
-    font-weight: 400;
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
     line-height: 1.15;
     color: #222222;
 }
@@ -674,20 +674,20 @@ article blockquote {
 }
 article blockquote:before {
 	content:"“";
-	font-family:Georgia;
-	font-size:8rem;
-	margin:-1rem 2rem 0 -3.9rem;
+	font-family: "Inter", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+	font-size:5rem;
+	margin:-0.6rem 1.2rem 0 -2.4rem;
 	position:absolute;
-	opacity:1;
+	opacity:0.12;
 	float:left;
 	line-height:1;
 }
 article:first-letter {
-	float:left;
-	font-size:5em;
-	line-height:1;
-	margin:0 .2em 0 0;
-	vertical-align:top;
+	float:none;
+	font-size:inherit;
+	line-height:inherit;
+	margin:0;
+	vertical-align:baseline;
 }
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
 	margin-bottom:2rem;
