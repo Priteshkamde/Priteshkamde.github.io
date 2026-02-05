@@ -1126,9 +1126,53 @@ a:hover {
 
 .post-hero {
 	background: #ffffff;
-	border: 1px solid var(--neutral-200);
+	border: none;
 	border-radius: 24px;
-	padding: 1.5rem 2rem;
+	padding: 2.5rem 3rem;
+	box-shadow: 0 22px 45px rgba(0, 0, 0, 0.08);
+}
+
+.post-hero .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.post-hero .row > [class*="col-"] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.post-eyebrow {
+	letter-spacing: 0.18em;
+	font-size: 0.7rem;
+	color: var(--neutral-500);
+}
+
+.creative-slab {
+	position: relative;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+.creative-slab:after {
+	content: "";
+	position: absolute;
+	inset: auto -20% -45% -20%;
+	height: 120%;
+	background: radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.05), transparent 45%),
+		radial-gradient(circle at 80% 0%, rgba(0, 0, 0, 0.04), transparent 40%);
+	opacity: 0.8;
+	pointer-events: none;
+}
+
+.creative-slab > * {
+	position: relative;
+	z-index: 1;
+}
+
+.creative-media {
+	border-radius: 18px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .post-meta small {
